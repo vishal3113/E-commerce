@@ -11,15 +11,35 @@
 <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="nav.css">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+    rel="stylesheet"
+    />
+        
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+    ></script>
+    
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg " style="background-color: rgb(221, 255, 248);">
+    <nav class="navbar navbar-expand-lg " style="background-color: rgb(240, 252, 249);">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="image/logo-bgr.png" width="100px" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+          <div class="collapse navbar-collapse"  id="navbarSupportedContent" >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
@@ -54,8 +74,8 @@
                 <a class="nav-link">Contact</a>
               </li>
             </ul>
-            <form class="d-flex" role="search" style="margin-right:50px; margin-top: 20px;">
-              <input class="form-control me-2" type="search" style="width:200px;"  placeholder="Search" aria-label="Search">
+            <form class="d-flex" role="search" style="margin-right:50px; margin-top: 2px;">
+              <input class="form-control me-2" type="search" style="width:180px;"  placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <div  class="acc" >
@@ -69,85 +89,25 @@
           </div>
         </div>
       </nav>
-      <nav>
-              <div class="wrapper">
-                <!--Top menu -->
-                <div class="sidebar">
-                  <!--profile image & text-->
-                    <!--menu item-->
-        
-                    <ul>
-                        <li>
-                            <a href="#" class="active">
-                                <span class="icon"><i class="fas fa-home"></i></span>
-                                <span class="item">Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="icon"><i class="fas fa-desktop"></i></span>
-                                <span class="item">My Dashboard</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="icon"><i class="fas fa-user-friends"></i></span>
-                                <span class="item">People</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
-                                <span class="item">Perfomance</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="icon"><i class="fas fa-telephone"></i></span>
-                                <span class="item">contact</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="icon"><i class="fas fa-chart-line"></i></span>
-                                <span class="item">Reports</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="icon"><i class="fas fa-user-shield"></i></span>
-                                <span class="item">Admin</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="icon"><i class="fas fa-cog"></i></span>
-                                <span class="item">Settings</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="section-nav">
-                    <div class="top_navbar">
-                        <div class="hamburger">
-                            <a href="#">
-                                <i class="fas fa-bars"></i>
-                            </a>
-                        </div>
-                    </div>
-        
-                </div>
-        
-            </div>
-            <script >
-            var hamburger = document.querySelector(".hamburger");
-            hamburger.addEventListener("click", function(){
-                document.querySelector("body").classList.toggle("active");
-            })
-          </script>
+      <!-- hamburger -->
+      <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#navbarToggleExternalContent2" aria-controls="navbarToggleExternalContent2"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars" style="color: white;"></i>
+          </button>
+        </div>
       </nav>
-     
+
+
+      <div class="collapse" id="navbarToggleExternalContent2">
+        <div class="bg-light shadow-3 p-4">
+          <button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
+          <button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
+          <button class="btn btn-link btn-block m-0">Link 3</button>
+        </div>
+      </div>
       <main class="bg">
         <div style="display: flex;">
             <div id="bg-c">
@@ -165,6 +125,11 @@
 <br>
 <br>
 <br>
+<p class="note note-primary">
+  <strong>Note primary:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+  Cum doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus
+  delectus placeat illo rem id nisi consequatur esse, sint perspiciatis soluta porro?
+</p>
 <br>
 <br>
 <div class="heading">M E N S  &nbsp; C O L L E C T I O N</div>
