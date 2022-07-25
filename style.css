@@ -32,12 +32,15 @@
     border: 0.5px solid black;
     padding:5px;
     border-radius: 3px;
-    background-color: rgb(221, 255, 248);
+    background-color: rgb(240, 252, 249);
 }
 
  .nav-item{
     margin: 5px;
  }
+.btn{
+    color: black !important;
+}
 
 #bg-c {
     width: 400px;
@@ -45,6 +48,12 @@
     display: flex;
     
 }
+#SS{
+    margin-left: 1150px;
+    color:white;
+    
+}
+
 
 .heading{
     text-align: center;
